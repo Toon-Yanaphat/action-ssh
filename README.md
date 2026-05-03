@@ -9,7 +9,7 @@ Add this step to your workflow:
 
 ```yaml
 - name: Run commands on remote server via SSH
-  uses: yanaphat-toon/action-ssh@main
+  uses: Toon-Yanaphat/action-ssh@main
   with:
     host: ${{ secrets.SSH_HOST }}
     user: ${{ secrets.SSH_USER }}
