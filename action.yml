@@ -18,6 +18,9 @@ inputs:
     description: "Connection timeout (in seconds)"
     required: false
     default: "30"
+  envs:
+    description: "Environment variables to pass to the remote script"
+    required: false
   script:
     description: "Commands to run"
     required: true
@@ -30,4 +33,5 @@ runs:
     - ${{ inputs.key }}
     - ${{ inputs.port }}
     - ${{ inputs.timeout }}
+    - ${{ inputs.envs }}
     - ${{ inputs.script }}
